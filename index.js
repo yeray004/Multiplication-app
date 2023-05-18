@@ -15,18 +15,22 @@ const correctAnsw = num1 * num2
 
 let score = JSON.parse(localStorage.getItem('score'));
 const scoreEl = document.getElementById('score');
+const audio = document.getElementById('audio')
+
+
 
 if(!score){
     score = 0;
 }
 if(score == -1){
     score = 0
+    audio.play()
 }
 
 scoreEl.innerText = `Score: ${score}`
 
-formEl.addEventListener('submit', ()=>{
 
+formEl.addEventListener('submit', ()=>{
     const userAnsw = parseInt(inputEl.value);
     if(correctAnsw === userAnsw){
         score++
