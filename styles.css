@@ -1,0 +1,67 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./a0168a144d96cb5ea9a3ec698316ed5a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 1em;
+    margin: 0;
+    padding: 0;
+    box-shadow: black 2px 3px 10px 1px;
+}
+h4{
+    width: fit-content;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: .5em;
+    font-size: clamp(1rem, 2vw, 4rem);
+}
+section{
+    margin: 0 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: 0 1em .5em 1em;
+    font-size: clamp(2rem, 2.6vw, 5rem);
+}
+input{
+    margin: 1em;
+    font-size: 1em;
+    padding: .5em;
+    border: .2em black solid;
+    border-radius: .5em;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+}
+input::placeholder{
+    color: #afafaf;
+}
+button{
+    padding: .5em;
+    margin: 0 1em .5em 1em;
+    font-size: 1em;
+    background-color: black;
+    border: .2em black solid;
+    border-radius: .5em;
+    color: white;
+    transition: all .2s;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, .7);
+}
